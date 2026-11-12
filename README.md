@@ -167,3 +167,16 @@ Odpri nov terminal na Macu, prever če dela:
 ```sh
 tomy@mac:~> vagrant ssh -c "curl http://127.0.0.1:5000/health"
 ```
+
+# Podatkovna baza
+
+Test:
+```
+devops=> INSERT INTO messages (id, content) VALUES (1, 'Najlepša podatkovna baza');
+INSERT 0 1
+devops=> SELECT * FROM messages;
+ id |         content          
+----+--------------------------
+  1 | Najlepša podatkovna baza
+(1 row)
+```
