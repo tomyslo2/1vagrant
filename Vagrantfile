@@ -6,6 +6,9 @@
 # backwards compatibility). Please don't change it unless you know what
 # you're doing.
 Vagrant.configure("2") do |config|
+  config.vm.provider "virtualbox" do |vb|
+    vb.customize ["setextradata", :id, "VBoxInternal/EM/ExitOptimizationEnabled", "0"]
+  end
   config.vm.network "forwarded_port", guest: 80, host: 8080
   config.vm.provision "shell", path: "provision.sh"
   # The most common configuration options are documented and commented below.

@@ -180,3 +180,7 @@ devops=> SELECT * FROM messages;
   1 | Najlepša podatkovna baza
 (1 row)
 ```
+
+## Vnos sporočil
+
+Po zagonu aplikacije odpri naslov strežnika v brskalniku za pregled in dodajanje vnosov. JSON API je na voljo na `GET /api/messages` in `POST /api/messages`; za dodajanje pošlji JSON, na primer `{"content": "Moj vnos"}`.
