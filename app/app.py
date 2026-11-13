@@ -92,12 +92,10 @@ def home():
 </head>
 <body>
   <main>
-    <p class="eyebrow">Your space</p>
     <h1>Entries</h1>
-    <p class="intro">Write something down and keep it here.</p>
     <form class="composer" id="entry-form">
       <label for="content">New entry</label>
-      <textarea id="content" name="content" placeholder="What’s on your mind?" required maxlength="10000"></textarea>
+      <textarea id="content" name="content" placeholder="Entry" required maxlength="10000"></textarea>
       <div class="form-footer">
         <span id="status" role="status" aria-live="polite"></span>
         <button id="submit" type="submit">Add entry</button>
